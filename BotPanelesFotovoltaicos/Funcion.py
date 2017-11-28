@@ -50,7 +50,7 @@ def menuPrincipal(msg):
         consultaB1(4)
         imprimir(datosPanelC1.values(),msg)
 
-    ##consulta2
+    ##consulta2 FALTA CAPTURAR EL DATO FECHA SUMINISTRADO POR EL USUARIO
     if msg['text'] == 'Panel F.1':
         bot.sendMessage(chat_id, 'La energia producida del panel el dia: xx es: ')
         consultaB2(1, '2017-03-23')
@@ -68,7 +68,7 @@ def menuPrincipal(msg):
         consultaB2(4, '2017-03-23')
         imprimir(datosPanelC2.values(),msg)
 
-    ##consulta3
+    ##consulta3 FALTA CAPTURAR LOS S FECHAINICIO Y FECHAFIN SUMINISTRADO POR EL USUARIO
     if msg['text'] == 'Panel F 1':
         bot.sendMessage(chat_id, 'La energia producida del panel desde el inicio hasta la fecha actual: ')
         consultaB3(1, '2017-03-21',time.strftime('%d %b %y'))
@@ -86,7 +86,7 @@ def menuPrincipal(msg):
         consultaB3(4, '2017-03-21',time.strftime('%d %b %y'))
         imprimir(datosPanelC3.values(),msg)
 
-    ##consulta4
+    ##consulta4 FALTA CAPTURAR LOS S FECHAINICIO Y FECHAFIN SUMINISTRADO POR EL USUARIO
     if msg['text'] == 'Panel F - 1':
         bot.sendMessage(chat_id, 'El promedio de energia producida del panel desde el inicio hasta la fecha actual: ')
         consultaB4(1, '2017-03-21',time.strftime('%d %b %y'))
@@ -214,7 +214,7 @@ def handle(msg):
 
 
 #token
-bot = telepot.Bot('478316324:AAF1TBgzsBDXyyjeH0UQs35OoD0gW_zm_IQ')
+bot = telepot.Bot('SU TOKEN')
 bot.message_loop(handle)
 print ('Listening ...')
 
